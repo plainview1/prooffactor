@@ -1,0 +1,22 @@
+<div class="caption">
+  <span>Type a full or partial url lorem ipsuum dolor setis</span>
+</div>
+<div>
+  <div class="grid grid-1">
+    <select name="" id="">
+      <option value="">Contains</option>
+      <option value="">Exact match</option>
+    </select>
+  </div>
+  <div class="grid grid-2">
+    <input [formControl]="ruleControl" type="text" placeholder="Display URL">
+  </div>
+  <div class="grid grid-1"></div>
+  <div class="grid grid-2">
+    <div *ngIf="ruleControl.invalid" class="ng-invalid">URL is missing</div>
+  </div>
+</div>
+<button class="pf-close" (click)="onDelete()">
+  <i class="fa fa-close" aria-hidden="true"> </i>
+</button>
+

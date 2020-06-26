@@ -1,0 +1,12 @@
+
+<h6>Where would you like to dsiplay you campaign?</h6>
+
+<ng-template ngFor let-tooltip [ngForOf]="tooltips">
+    <app-tooltip 
+    [model]="tooltip"
+    (deleteTooltip)="removeRule($event)"
+    (isFormValid)="checkIfFormValid($event)"
+    ></app-tooltip>
+</ng-template>
+
+<button class="pf-button" *ngIf="createAvailiable" type="submit" (click)="addRule()">{{'new rule' | uppercase }}</button>

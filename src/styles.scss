@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.pf-button {
+    padding: 5pt;
+    font-size: 7pt;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(88, 82, 82);
+    border: 1px solid rgb(175, 160, 160)
+}
